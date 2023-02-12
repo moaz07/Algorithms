@@ -1,0 +1,28 @@
+ALGORITHM sentence
+VAR
+    sen: STRING;
+    len, words, i: INTEGER;
+BEGIN
+    write("write somthing")
+    read(sen)
+
+    //The length of the sentence
+    len:= sen.length
+    write("length of sentence is : ", len)
+
+    //The number of words in the sentence
+    FOR i FROM 0 TO len STEP 1 DO
+        IF (sen[i]==" ") THEN
+            words := word+1;
+        END_IF
+    END_FOR
+    write("numbre of words is: ", words)
+
+    //The number of vowels in the sentence
+    FOR i FROM 0 TO len STEP 1 DO
+        IF (sen[i]=="a" or sen[i]=="e" or sen[i]=="o" or sen[i]=="i" or sen[i]=="u") THEN
+            vow := vow+1;
+        END_IF
+    END_FOR
+    write("numbre of vowels is: ", vow)
+END
