@@ -1,0 +1,15 @@
+ALGORITHM algorithm_name
+VAR
+    arr[]:  ARRAY_OF INTEGER[];
+    i, j, ar :   INTEGER;
+BEGIN
+    FOR i FROM 1 TO arr.length STEP 1  DO
+        ar= arr[i]
+        j= i-1
+        WHILE (j>=0 and ar<arr[j]) DO
+            arr[j+1] = arr[j]
+            j=j-1
+        END_WHILE
+        arr[j+1]=ar
+    END_FOR
+END
