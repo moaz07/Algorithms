@@ -1,0 +1,22 @@
+ALGORITHM palindrome
+VAR
+    str: STRING;
+    l,h : INTEGER;
+    pal: BOOLEAN;
+BEGIN
+    h= str.length -1;
+    l=0;
+    pal=true;
+    WHILE (h>1) DO
+        IF (str[l] <> str[h] ) THEN
+            write("not a palindrome")
+            pal= false
+            break
+        END_IF
+        l = l+1
+        h = h-1
+    END_WHILE
+    IF (pal=true) THEN
+        write("it is a palindrome")
+    END_IF
+END
